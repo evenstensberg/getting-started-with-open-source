@@ -1,0 +1,38 @@
+{
+  "name": "hello-world-react",
+  "version": "1.0.0",
+  "description": "Creating hello world using a modern development tool (React)",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meshboy/getting-started-with-open-source.git"
+  },
+  "keywords": [
+    "React",
+    "tools",
+    "frontend"
+  ],
+  "author": "Meshileya Seun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meshboy/getting-started-with-open-source/issues"
+  },
+  "homepage": "https://github.com/meshboy/getting-started-with-open-source#readme",
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
