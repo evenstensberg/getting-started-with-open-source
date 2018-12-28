@@ -16,6 +16,14 @@ module.exports = {
         }
       },
       {
+        test: /\.jsx?$/,
+        loader: "babel-loader",
+        exclude: /node_modules/,
+        query: {
+          presets: ["es2015"]
+        }
+      },
+      {
         test: /\.s?css/,
         use: ["style-loader", "css-loader", "sass-loader"]
       }
