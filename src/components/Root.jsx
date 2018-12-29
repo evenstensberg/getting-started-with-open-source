@@ -1,29 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import HelloWorld from "./HelloWorld.jsx";
+import NoMatch from "./NoMatch.jsx";
 
-const Root = props => {
+const Root = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <div>
         <Switch>
-          <Route exact path="/" component={HelloWorld} />
-          <Route path="*" component={NoMatch} />
+          <Route path="/" exact component={HelloWorld} />
+          <Route component={NoMatch} />
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
-
-function NoMatch({ location }) {
-  return (
-    <div>
-      <h3>
-        No match for <code>{location.pathname}</code>
-      </h3>
-    </div>
-  );
-}
 
 export default Root;
