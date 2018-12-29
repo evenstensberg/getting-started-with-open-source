@@ -1,4 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./styles/style.scss";
+import Root from "./components/Root.jsx";
 
-ReactDOM.render(<h1>Hello world!!</h1>, document.getElementById("root"));
+ReactDOM.render(<Root />, document.getElementById("root"));
