@@ -1,5 +1,5 @@
 import React from "react";
 
-const HelloWorld = () => <h1>Hello, world!</h1>;
+const HelloWorld = () => <h1 className="blue">Hello, world!</h1>;
 
 export default HelloWorld;
